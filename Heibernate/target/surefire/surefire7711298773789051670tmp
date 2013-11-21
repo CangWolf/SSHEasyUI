@@ -1,0 +1,6 @@
+#surefire
+#Thu Nov 21 11:56:29 CST 2013
+user.dir=E\:\\Project\\Maven\\SSHEasyUI\\Heibernate
+maven.repo.local=E\:\\Repository
+localRepository=E\:\\Repository
+basedir=E\:\\Project\\Maven\\SSHEasyUI\\Heibernate
