@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54e63a1-7b98-433a-be4d-6f1edc717d6b" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Project\Maven\SSHEasyUI\.idea\libraries\Maven__org_hibernate_hibernate_annotations_3_5_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Project\Maven\SSHEasyUI\.idea\libraries\Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/Heibernate.iml" afterPath="$PROJECT_DIR$/Heibernate/Heibernate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/util/HibernateUtil.java" afterPath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/util/HibernateUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
@@ -13,21 +9,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_6_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_6_10_Final.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSHEasyUi.iml" afterPath="$PROJECT_DIR$/SSHEasyUi.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/domain/User.java" afterPath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/UserManager.java" afterPath="$PROJECT_DIR$/Heibernate/src/main/java/org/hibernate/tutorial/UserManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/Heibernate/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/Heibernate/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heibernate/pom.xml" afterPath="$PROJECT_DIR$/Heibernate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spy.log" afterPath="$PROJECT_DIR$/spy.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SSHEasyUi.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/spy.properties" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385000646602" ignored="false" />
-    <file path="/Dummy.txt" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620806761" ignored="false" />
+    <file path="/Dummy.txt" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620837358" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385617239368" ignored="false" />
     <file path="/pom.xml" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620023139" ignored="false" />
     <file path="/a.dummy" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385364838906" ignored="false" />
@@ -703,7 +690,11 @@
       <created>1385605762779</created>
       <updated>1385605762779</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hibernate log4j,Annotation">
+      <created>1385620842420</created>
+      <updated>1385620842420</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
