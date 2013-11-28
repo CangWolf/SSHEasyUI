@@ -14,7 +14,7 @@
     <ignored path="SSHEasyUi.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/spy.properties" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385000646602" ignored="false" />
-    <file path="/Dummy.txt" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620837358" ignored="false" />
+    <file path="/Dummy.txt" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620848665" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385617239368" ignored="false" />
     <file path="/pom.xml" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385620023139" ignored="false" />
     <file path="/a.dummy" changelist="f54e63a1-7b98-433a-be4d-6f1edc717d6b" time="1385364838906" ignored="false" />
@@ -694,7 +694,11 @@
       <created>1385620842420</created>
       <updated>1385620842420</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hibernate log4j,Annotation">
+      <created>1385620850865</created>
+      <updated>1385620850865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
