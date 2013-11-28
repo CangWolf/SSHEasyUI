@@ -4,8 +4,8 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-
     <session-factory>
+
         <!-- Database connection settings -->
         <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
         <property name="connection.driver_class">com.p6spy.engine.spy.P6SpyDriver</property>
@@ -30,8 +30,9 @@
 
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
-
-        <mapping resource="org/hibernate/tutorial/domain/User.hbm.xml"/>
+        <!--class can scan annotation class or hbm.xml-->
+        <mapping class="org.hibernate.tutorial.domain.User"/>
+        <!--<mapping resource="org/hibernate/tutorial/domain/User.hbm.xml"/>-->
 
     </session-factory>
 

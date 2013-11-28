@@ -38,13 +38,13 @@ public class UserManager {
     public List listUsers() {
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
-        List result = session.createQuery("from User").list();
+        List result = session.createQuery("from User u where u.username = :username").setParameter("username","lisi").list();
         session.getTransaction().commit();
 
         if (null != result && result.size() > 0) {
             for (Object obj : result) {
                 User u = (User) obj;
-                System.out.println(u.getUsername() + "-------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&----");
+                System.out.println(u.getUsername() + "-------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&----"+u.getId());
             }
         }
 
