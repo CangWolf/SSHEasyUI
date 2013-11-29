@@ -12,7 +12,7 @@ public class UserManagerTest {
     public void testCreate(){
 
         UserManager um = new UserManager();
-        um.createAndStoreUser("zhangsna", "78979");
+//        um.createAndStoreUser("zhangsna", "78979");
 
         um.listUsers();
 

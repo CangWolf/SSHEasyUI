@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <!--struts.convention.action.mapAllMatches 对于结果没有影响
+    官方解释 defaultValue:false 	desc:Create action mappings, even if no @Action is found  -->
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <!--struts.convention.action.packages 指定使用annotation的package ，类似Spring的compotent-scan-->
+    <constant name="struts.convention.action.packages" value="org.cangwolf.struts2.action"/>
+    <!--struts.convention.result.path 如果不指定，会自动去找WEB-INF/content 下的 -->
+    <constant name="struts.convention.result.path" value="/"/>
+    <package name="basicstruts2" extends="struts-default">
+        <!--如果不配置class属性，默认执行xwork框架的ActionSupport这个action,
+        这个action就有execute这个方法，return success。-->
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        <action name="hello" class="org.cangwolf.struts2.action.HelloWorldAction" method="execute">
+            <result name="success">/helloworld.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

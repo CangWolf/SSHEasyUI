@@ -7,14 +7,16 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Heibernate</module>
+        <module>Struts</module>
+        <module>EasyUI</module>
     </modules>
     <name>SSHEasyUi Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
         <springframework.version>3.2.2.RELEASE</springframework.version>
         <javax.mail.version>1.4.5</javax.mail.version>
-        <struts.version>2.3.4.1</struts.version>
-        <hibernate.version>3.6.10.Final</hibernate.version>
+        <!--<struts.version>2.3.4.1</struts.version>-->
+        <!--<hibernate.version>3.6.10.Final</hibernate.version>-->
     </properties>
     <dependencies>
         <!-- junit -->
@@ -22,6 +24,17 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
+        </dependency>
+        <!--byte code op-->
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.12.1.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.1</version>
         </dependency>
         <!-- spring -->
         <dependency>
@@ -44,34 +57,17 @@
             <artifactId>spring-jdbc</artifactId>
             <version>${springframework.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
 
         <!-- java mail -->
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>${javax.mail.version}</version>
-        </dependency>
-        <!-- Struts2 -->
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-core</artifactId>
-            <version>${struts.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>javassist</groupId>
-                    <artifactId>javassist</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-convention-plugin</artifactId>
-            <version>${struts.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-spring-plugin</artifactId>
-            <version>${struts.version}</version>
         </dependency>
 
 

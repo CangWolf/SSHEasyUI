@@ -3,6 +3,10 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Struts" />
+  </component>
+  <component name="IdProvider" IDEtalkID="1F56784A0C30E5621EDBE3A44B8CD59E" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

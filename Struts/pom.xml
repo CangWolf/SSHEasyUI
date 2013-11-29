@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>SSHEasyUi</artifactId>
+        <groupId>org.cangwolf.ssheu</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Struts</artifactId>
+
+    <packaging>war</packaging>
+
+    <properties>
+        <struts.version>2.3.15.3</struts.version>
+        <compile.plugin.version>3.1</compile.plugin.version>
+        <resources.plugin.version>2.6</resources.plugin.version>
+        <jetty.version>9.0.3.v20130506</jetty.version>
+    </properties>
+
+    <dependencies>
+        <!-- Struts2 -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javassist</groupId>
+                    <artifactId>javassist</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+            <version>${struts.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-spring-plugin</artifactId>
+            <version>${struts.version}</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.struts.xwork</groupId>
+            <artifactId>xwork-core</artifactId>
+            <version>${struts.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+            <version>${struts.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>hellostruts2</finalName>
+        <plugins>
+            <!--mavn compile plugin-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compile.plugin.version}</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.7</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${resources.plugin.version}</version>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <!--<plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
+                <configuration>
+                    <stopKey>stop</stopKey>
+                    <stopPort>6609</stopPort>
+                    &lt;!&ndash;<scanIntervalSeconds>0</scanIntervalSeconds>&ndash;&gt;
+                    &lt;!&ndash;<webApp>
+                        <contextPath>/</contextPath>
+                    </webApp>&ndash;&gt;
+                    &lt;!&ndash;<httpConnector>&ndash;&gt;
+                        &lt;!&ndash;<port>8080</port>&ndash;&gt;
+                        &lt;!&ndash;&lt;!&ndash;<maxIdleTime>60000</maxIdleTime>&ndash;&gt;&ndash;&gt;
+                    &lt;!&ndash;</httpConnector>&ndash;&gt;
+                </configuration>
+            </plugin>-->
+            <!-- <plugin>
+                 <groupId>org.mortbay.jetty</groupId>
+                 <artifactId>jetty-maven-plugin</artifactId>
+                 <version>7.1.6.v20100715</version>
+                 <configuration>
+                     <stopKey>stop</stopKey>
+                     <stopPort>5599</stopPort>
+                     <webAppConfig>
+                         <contextPath>/</contextPath>
+                         &lt;!&ndash;<defaultsDescriptor>src/main/resources/webdefault.xml</defaultsDescriptor>&ndash;&gt;
+                     </webAppConfig>
+                     <scanIntervalSeconds>0</scanIntervalSeconds>
+                     <connectors>
+                         <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                             <port>8080</port>
+                             <maxIdleTime>60000</maxIdleTime>
+                         </connector>
+                     </connectors>
+                 </configuration>
+             </plugin>-->
+
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.19</version>
+                <configuration>
+                    <connectors>
+                        <connector  implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                            <port>8086</port>
+                        </connector>
+                    </connectors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

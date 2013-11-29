@@ -38,7 +38,7 @@ public class UserManager {
     public List listUsers() {
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
-        List result = session.createQuery("from User u where u.username = :username").setParameter("username","lisi").list();
+        List result = session.createQuery("from User u where u.username = :username and u.id = :id").setParameter("username","lisi").setParameter("id",2L).list();
         session.getTransaction().commit();
 
         if (null != result && result.size() > 0) {
