@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EasyUI/EasyUI.iml" filepath="$PROJECT_DIR$/EasyUI/EasyUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreeMarker/FreeMarker.iml" filepath="$PROJECT_DIR$/FreeMarker/FreeMarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heibernate/Heibernate.iml" filepath="$PROJECT_DIR$/Heibernate/Heibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSHEasyUi.iml" filepath="$PROJECT_DIR$/SSHEasyUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts/Struts.iml" filepath="$PROJECT_DIR$/Struts/Struts.iml" />
     </modules>
   </component>

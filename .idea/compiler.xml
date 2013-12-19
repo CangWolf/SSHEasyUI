@@ -23,13 +23,17 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="EasyUI" />
+        <module name="FreeMarker" />
         <module name="Heibernate" />
+        <module name="Spring" />
         <module name="Struts" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="EasyUI" target="1.6" />
+      <module name="FreeMarker" target="1.6" />
       <module name="Heibernate" target="1.6" />
+      <module name="Spring" target="1.6" />
       <module name="SSHEasyUi" target="1.6" />
       <module name="Struts" target="1.7" />
     </bytecodeTargetLevel>
